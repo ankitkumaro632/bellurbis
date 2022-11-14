@@ -14,7 +14,11 @@
 	<name>bellurbis</name>
 	<description>Demo project for docker with the help of Spring Boot</description>
 	<properties>
+<<<<<<< HEAD
 		<java.version>19</java.version>
+=======
+		<java.version>11</java.version>
+>>>>>>> 83f0e1b (first commit int this project)
 	</properties>
 	<dependencies>
 		<dependency>
@@ -39,6 +43,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+<<<<<<< HEAD
 				<configuration>
 					<excludes>
 						<exclude>
@@ -47,6 +52,8 @@
 						</exclude>
 					</excludes>
 				</configuration>
+=======
+>>>>>>> 83f0e1b (first commit int this project)
 			</plugin>
 		</plugins>
 		<finalName>spring-boot-docker</finalName>
