@@ -1,4 +1,4 @@
-FROM openjdk:19
+FROM openjdk:11
 EXPOSE 9090
-ADD target/spring-boot-docker.jar spring-boot-docker.jar
-ENTRYPOINT ["java","-jar","/spring-boot-docker.jar"]
+ADD target/springBoot-jenkins-pipeline.jar springBoot-jenkins-pipeline.jar
+ENTRYPOINT ["java","-jar","/springBoot-jenkins-pipeline.jar"]
