@@ -5,12 +5,12 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: spring-boot-k8s
+      app: spring-boot-k8s-docker
   replicas: 2 # Number of replicas that will be created for this deployment
   template:
     metadata:
       labels:
-        app: spring-boot-k8s
+        app: spring-boot-k8s-docker
     spec:
       containers:
         - name: spring-boot-k8s
