@@ -13,7 +13,7 @@ spec:
         app: spring-boot-k8s-docker
     spec:
       containers:
-        - name: spring-boot-k8s
+        - name: spring-boot-k8s-jenkins
           image: akbb001/springBoot-jenkins-pipeline # Image that will be used to containers in the cluster
           imagePullPolicy: IfNotPresent
           ports:
@@ -28,7 +28,7 @@ metadata: # Metadata of the resource kind we are creating
   name: springboot-k8ssvc
 spec:
   selector:
-    app: spring-boot-k8s
+    app: spring-boot-k8s-docker
   ports:
     - protocol: "TCP"
       port: 9780 # The port that the service is running on in the cluster
