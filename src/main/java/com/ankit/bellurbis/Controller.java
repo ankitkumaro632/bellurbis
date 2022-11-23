@@ -8,8 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
 
     @GetMapping("/home/{name}")
-    public String hello0(@PathVariable("name") String name)
-    {
+    public String hello0(@PathVariable("name") String name) {
         return "Hello, Welcome To Bellurbis Technologies  " + name;
     }
 }
